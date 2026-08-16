@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>~/roadmap/csharp-backend.md</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="crt"></div>
+
+<div class="window">
+
+  <div class="titlebar">
+    <div class="dots">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+    <div class="titlebar-path">ian@nwb: ~/roadmap/csharp-backend.md</div>
+    <div class="titlebar-spacer"></div>
+  </div>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-cloud">☁</div>
+        <div class="brand-text">
+          <div class="brand-title">csharp-backend</div>
+          <div class="brand-sub">.roadmap</div>
+        </div>
+      </div>
+
+      <nav class="phase-nav" id="phaseNav"></nav>
+
+      <div class="progress-block">
+        <div class="progress-label">
+          <span>overall</span>
+          <span id="progressPct">0%</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-sub" id="progressCount">0 / 0 resources checked</div>
+        <button class="reset-btn" id="resetBtn">$ reset --progress</button>
+      </div>
+    </aside>
+
+    <main class="content">
+
+      <header class="hero">
+        <p class="hero-eyebrow">$ cat roadmap.md</p>
+        <h1 class="hero-title">C# / ASP.NET<br><span class="accent-pink">Backend Developer</span> Path</h1>
+        <p class="hero-desc">
+          A phase-by-phase route from C# fundamentals to a production-ready
+          ASP.NET Core backend developer &mdash; Web APIs, Blazor, EF Core, auth,
+          scalability, and the Microsoft certifications that back it up.
+          Check off resources as you clear them; progress saves in this browser.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">15 phases</span>
+          <span class="tag">6 certifications</span>
+          <span class="tag">11 portfolio projects</span>
+        </div>
+      </header>
+
+      <section class="phases" id="phases"></section>
+
+      <section class="section" id="projects-section">
+        <h2 class="section-title"><span class="section-num">§</span> Portfolio Projects</h2>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </section>
+
+      <section class="section" id="certs-section">
+        <h2 class="section-title"><span class="section-num">§</span> Suggested Certification Order</h2>
+        <ol class="cert-list" id="certList"></ol>
+      </section>
+
+      <section class="section" id="milestones-section">
+        <h2 class="section-title"><span class="section-num">§</span> Milestones</h2>
+        <div class="milestones" id="milestones"></div>
+      </section>
+
+      <footer class="footer">
+        <span>built for <a href="https://centaim.com" target="_blank" rel="noopener">centaim.com</a></span>
+        <span class="footer-dot">&middot;</span>
+        <span>github.com/Ian-nwb</span>
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
