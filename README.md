@@ -140,5 +140,3 @@
 - **Through Phase 10** → Junior .NET Backend Developer skill level
 - **Through Phase 14 + AZ-204 + 3 strong portfolio projects** → approaching Mid-level Backend Developer
 - **Through Phase 15 + a scalability-focused project** → Mid-level, production-ready backend skill set
-#   C - G u i d e - M S L e a r n -  
- 
