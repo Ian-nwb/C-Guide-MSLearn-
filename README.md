@@ -98,6 +98,56 @@
 - Topics: caching strategies (in-memory, distributed/Redis), message queues (RabbitMQ/Azure Service Bus), background job processing (Hangfire/Quartz.NET), retry/circuit breaker patterns (Polly), structured logging (Serilog), distributed tracing/OpenTelemetry
 - Why: rounds out the "junior → mid-level backend" gap around real-world production concerns
 
+## Phase 16 (New): Multi-Tenancy Patterns
+- [Multitenant SaaS Patterns (Azure SQL Database)](https://learn.microsoft.com/en-us/azure/azure-sql/database/saas-tenancy-app-design-patterns?view=azuresql)
+- [SaaS and Multitenant Solution Architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/saas-multitenant-solution-architecture/)
+- [Architect Multitenant Solutions on Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/overview)
+- Topics: tenancy models (single-DB shared-schema, schema-per-tenant, DB-per-tenant), sharding, tenant identity, the Noisy Neighbor antipattern
+- Why: directly relevant to SaaS-style projects — picking the wrong tenancy model early is expensive to walk back
+
+## Phase 17 (New): Domain-Driven Design & Microservices Patterns
+- [Designing a Microservice Domain Model](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model)
+- [Domain Events: Design and Implementation](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation)
+- [Use Domain Analysis to Model Microservices](https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis)
+- [Use Tactical DDD to Design Microservices](https://learn.microsoft.com/en-us/azure/architecture/microservices/model/tactical-domain-driven-design)
+- Topics: aggregates, entities vs value objects, bounded contexts, ubiquitous language, domain events vs integration events
+- Why: goes deeper than Phase 10's Clean Architecture — this is where CQRS and Result-pattern choices actually get justified
+
+## Phase 18 (New): Event-Driven Architecture & Messaging
+- [Asynchronous Message-Based Communication](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/asynchronous-message-based-communication)
+- [Implementing Event-Based Communication Between Microservices](https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/integration-event-based-microservice-communications)
+- [Event-Driven Architecture Style](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
+- Topics: pub/sub vs point-to-point queues, event bus abstractions, eventual consistency, choreography vs saga orchestration
+- Why: turns Phase 15's "message queues" bullet into an actual pattern instead of a name-drop
+
+## Phase 19 (New): API Gateway & Reverse Proxy (YARP)
+- [Overview of YARP](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/yarp-overview?view=aspnetcore-10.0)
+- [Get Started with YARP](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/getting-started?view=aspnetcore-10.0)
+- [YARP Configuration Files](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/config-files?view=aspnetcore-10.0)
+- [YARP Authentication and Authorization](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/authn-authz?view=aspnetcore-10.0)
+- Topics: routing, load balancing, TLS termination, per-route authorization policies
+- Why: a first-party .NET reverse proxy — useful the moment you split a monolith into more than one backend service
+
+## Phase 20 (New): Security Hardening
+- [Guide to Secure .NET Development with OWASP Top 10](https://learn.microsoft.com/en-us/training/modules/owasp-top-10-for-dotnet-developers/)
+- [ASP.NET Core Security Topics (overview)](https://learn.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-7.0)
+- [Safe Storage of App Secrets in Development](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-10.0)
+- Topics: OWASP Top 10 for .NET, input validation, Secret Manager vs Key Vault, HTTPS/HSTS, CSRF/XSS mitigation in Razor/Blazor
+- Why: closes the gap between "auth works" (Phase 9) and "auth is actually hardened"
+
+## Phase 21 (New): Performance Profiling & Diagnostics
+- [.NET Diagnostic Tools Overview](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/tools-overview)
+- [Profiling Tools in .NET](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/profilers)
+- [dotnet-counters Diagnostic Tool](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/dotnet-counters)
+- [Debug High CPU Usage in .NET Core](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/debug-highcpu)
+- Topics: dotnet-trace, dotnet-counters, dotnet-dump, dotnet-gcdump, flamegraphs, root-causing slow endpoints
+- Why: the practical skill behind "why is this API slow" once caching/resilience (Phase 15) alone doesn't explain it
+
+## Phase 22 (New): NoSQL with .NET (MongoDB)
+- [Create a Web API with ASP.NET Core and MongoDB](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-10.0)
+- Topics: MongoDB.Driver, BsonId/BSON serialization attributes, collections vs tables mindset, when NoSQL beats EF Core/SQL for a given service
+- Why: you already run MongoDB elsewhere (Wattly, SHIELA, Nini HR) — this closes the gap between "I use Mongo in Node" and "I use Mongo in .NET"
+
 ---
 
 ## Portfolio Projects
@@ -140,3 +190,4 @@
 - **Through Phase 10** → Junior .NET Backend Developer skill level
 - **Through Phase 14 + AZ-204 + 3 strong portfolio projects** → approaching Mid-level Backend Developer
 - **Through Phase 15 + a scalability-focused project** → Mid-level, production-ready backend skill set
+- **Through Phase 22 + a multi-tenant or event-driven project** → Senior-leaning backend skill set (architecture, security, and diagnostics, not just feature delivery)
