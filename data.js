@@ -144,6 +144,77 @@ const ROADMAP = {
       ],
       topics: ["caching strategies (in-memory, distributed/Redis)", "message queues (RabbitMQ/Azure Service Bus)", "background job processing (Hangfire/Quartz.NET)", "retry/circuit breaker patterns (Polly)", "structured logging (Serilog)", "distributed tracing/OpenTelemetry"],
       why: "Rounds out the \"junior → mid-level backend\" gap around real-world production concerns."
+    },
+    {
+      n: "16", title: "Multi-Tenancy Patterns", tagline: "New",
+      links: [
+        { t: "Multitenant SaaS Patterns (Azure SQL Database)", u: "https://learn.microsoft.com/en-us/azure/azure-sql/database/saas-tenancy-app-design-patterns?view=azuresql" },
+        { t: "SaaS and Multitenant Solution Architecture", u: "https://learn.microsoft.com/en-us/azure/architecture/guide/saas-multitenant-solution-architecture/" },
+        { t: "Architect Multitenant Solutions on Azure", u: "https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/overview" }
+      ],
+      topics: ["tenancy models (single-DB shared-schema, schema-per-tenant, DB-per-tenant)", "sharding", "tenant identity", "the Noisy Neighbor antipattern"],
+      why: "Directly relevant to SaaS-style projects — picking the wrong tenancy model early is expensive to walk back."
+    },
+    {
+      n: "17", title: "Domain-Driven Design & Microservices Patterns", tagline: "New",
+      links: [
+        { t: "Designing a Microservice Domain Model", u: "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model" },
+        { t: "Domain Events: Design and Implementation", u: "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation" },
+        { t: "Use Domain Analysis to Model Microservices", u: "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis" },
+        { t: "Use Tactical DDD to Design Microservices", u: "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/tactical-domain-driven-design" }
+      ],
+      topics: ["aggregates", "entities vs value objects", "bounded contexts", "ubiquitous language", "domain events vs integration events"],
+      why: "Goes deeper than Phase 10's Clean Architecture — this is where CQRS and Result-pattern choices actually get justified."
+    },
+    {
+      n: "18", title: "Event-Driven Architecture & Messaging", tagline: "New",
+      links: [
+        { t: "Asynchronous Message-Based Communication", u: "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/asynchronous-message-based-communication" },
+        { t: "Implementing Event-Based Communication Between Microservices", u: "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/integration-event-based-microservice-communications" },
+        { t: "Event-Driven Architecture Style", u: "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven" }
+      ],
+      topics: ["pub/sub vs point-to-point queues", "event bus abstractions", "eventual consistency", "choreography vs saga orchestration"],
+      why: "Turns Phase 15's \"message queues\" bullet into an actual pattern instead of a name-drop."
+    },
+    {
+      n: "19", title: "API Gateway & Reverse Proxy (YARP)", tagline: "New",
+      links: [
+        { t: "Overview of YARP", u: "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/yarp-overview?view=aspnetcore-10.0" },
+        { t: "Get Started with YARP", u: "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/getting-started?view=aspnetcore-10.0" },
+        { t: "YARP Configuration Files", u: "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/config-files?view=aspnetcore-10.0" },
+        { t: "YARP Authentication and Authorization", u: "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/authn-authz?view=aspnetcore-10.0" }
+      ],
+      topics: ["routing", "load balancing", "TLS termination", "per-route authorization policies"],
+      why: "A first-party .NET reverse proxy — useful the moment you split a monolith into more than one backend service."
+    },
+    {
+      n: "20", title: "Security Hardening", tagline: "New",
+      links: [
+        { t: "Guide to Secure .NET Development with OWASP Top 10", u: "https://learn.microsoft.com/en-us/training/modules/owasp-top-10-for-dotnet-developers/" },
+        { t: "ASP.NET Core Security Topics (overview)", u: "https://learn.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-7.0" },
+        { t: "Safe Storage of App Secrets in Development", u: "https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-10.0" }
+      ],
+      topics: ["OWASP Top 10 for .NET", "input validation", "Secret Manager vs Key Vault", "HTTPS/HSTS", "CSRF/XSS mitigation in Razor/Blazor"],
+      why: "Closes the gap between \"auth works\" (Phase 9) and \"auth is actually hardened\"."
+    },
+    {
+      n: "21", title: "Performance Profiling & Diagnostics", tagline: "New",
+      links: [
+        { t: ".NET Diagnostic Tools Overview", u: "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/tools-overview" },
+        { t: "Profiling Tools in .NET", u: "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/profilers" },
+        { t: "dotnet-counters Diagnostic Tool", u: "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/dotnet-counters" },
+        { t: "Debug High CPU Usage in .NET Core", u: "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/debug-highcpu" }
+      ],
+      topics: ["dotnet-trace", "dotnet-counters", "dotnet-dump", "dotnet-gcdump", "flamegraphs", "root-causing slow endpoints"],
+      why: "The practical skill behind \"why is this API slow\" once caching/resilience (Phase 15) alone doesn't explain it."
+    },
+    {
+      n: "22", title: "NoSQL with .NET (MongoDB)", tagline: "New",
+      links: [
+        { t: "Create a Web API with ASP.NET Core and MongoDB", u: "https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-10.0" }
+      ],
+      topics: ["MongoDB.Driver", "BsonId/BSON serialization attributes", "collections vs tables mindset", "when NoSQL beats EF Core/SQL for a given service"],
+      why: "You already run MongoDB elsewhere (Wattly, SHIELA, Nini HR) — this closes the gap between \"I use Mongo in Node\" and \"I use Mongo in .NET\"."
     }
   ],
 
@@ -166,6 +237,7 @@ const ROADMAP = {
   milestones: [
     { range: "Through Phase 10", result: "Junior .NET Backend Developer skill level" },
     { range: "Through Phase 14 + AZ-204 + 3 strong portfolio projects", result: "Approaching Mid-level Backend Developer" },
-    { range: "Through Phase 15 + a scalability-focused project", result: "Mid-level, production-ready backend skill set" }
+    { range: "Through Phase 15 + a scalability-focused project", result: "Mid-level, production-ready backend skill set" },
+    { range: "Through Phase 22 + a multi-tenant or event-driven project", result: "Senior-leaning backend skill set (architecture, security, diagnostics)" }
   ]
 };
