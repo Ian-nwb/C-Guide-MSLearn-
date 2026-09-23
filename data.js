@@ -62,6 +62,16 @@ const ROADMAP = {
       why: "Delivers essential modern responsive layout and styling skills for web development."
     },
     {
+  n: "06.5", title: "TypeScript & React Integration", tagline: "Industry Standard Frontend",
+  links: [
+    { t: "TypeScript Documentation", u: "https://www.typescriptlang.org/docs/" },
+    { t: "React Official Documentation", u: "https://react.dev/" },
+    { t: "Build a React App with ASP.NET Core API", u: "https://learn.microsoft.com/visualstudio/javascript/tutorial-asp-net-core-with-react" }
+  ],
+  topics: ["TypeScript Syntax & Static Typing", "React Functional Components & Hooks", "State Management (Zustand / Redux)", "Axios / Fetch API integration with .NET Web API", "CORS Configuration in ASP.NET Core"],
+  why: "Prepares you for the most common real-world stack: ASP.NET Core Web API + React/TS Frontend."
+},
+    {
       n: "07", title: "SQL, Relational Databases & Dapper",
       links: [
         { t: "Introduction to Querying with Transact-SQL", u: "https://learn.microsoft.com/training/paths/get-started-querying-with-transact-sql/" },
@@ -188,6 +198,16 @@ const ROADMAP = {
       why: "Provides skills to build robust, scalable API platforms."
     },
     {
+  n: "18.5", title: "Production Observability & APM", tagline: "Enterprise Operations",
+  links: [
+    { t: "Serilog & Structured Logging", u: "https://serilog.net/" },
+    { t: "Grafana & Prometheus Documentation", u: "https://prometheus.io/docs/introduction/overview/" },
+    { t: "Seq Centralized Logging for .NET", u: "https://datalust.co/seq" }
+  ],
+  topics: ["Serilog & Structured JSON Logs", "Prometheus Metrics Gathering", "Grafana Dashboard Setup", "OpenTelemetry Tracing", "Centralized Log Aggregation (Seq / ELK Stack)"],
+  why: "Essential for debugging silent production failures without attaching a live debugger."
+},
+    {
       n: "19", title: "Multi-Tenancy SaaS Patterns",
       links: [
         { t: "SaaS Tenancy Architecture Patterns", u: "https://learn.microsoft.com/azure/azure-sql/database/saas-tenancy-app-design-patterns" },
@@ -253,7 +273,17 @@ const ROADMAP = {
       ],
       topics: ["MongoDB.Driver for .NET", "BsonId & Serialization", "Document Store vs Relational Mindset", "Repository Pattern with Mongo", "When to choose NoSQL vs EF Core"],
       why: "Expands document persistence options alongside relational databases."
-    }
+    },
+    {
+  n: "25.5", title: "Vector Databases & AI Integration (Semantic Kernel)", tagline: "Modern AI Stack",
+  links: [
+    { t: "Microsoft Semantic Kernel Docs", u: "https://learn.microsoft.com/semantic-kernel/overview/" },
+    { t: "Azure OpenAI & .NET Integration", u: "https://learn.microsoft.com/azure/ai-services/openai/" }
+  ],
+  topics: ["Vector Embeddings & Search", "Pinecone / Qdrant / Pgvector", "Microsoft Semantic Kernel SDK", "Building RAG (Retrieval-Augmented Generation) with .NET"],
+  why: "Positions you at the bleeding edge of AI-driven .NET application development."
+}
+    
   ],
 
   projects: [
@@ -272,7 +302,12 @@ const ROADMAP = {
     { t: "Cisco Networking Academy: Cybersecurity Essentials (100% Free Cert)", u: "https://www.netacad.com/courses/cybersecurity/cybersecurity-essentials" },
     { t: "AZ-900 Azure Fundamentals (Paid Exam / Free Learning Path)", u: "https://learn.microsoft.com/credentials/certifications/azure-fundamentals/" },
     { t: "GitHub Foundations (Paid Exam / Free Learning Path)", u: "https://learn.microsoft.com/credentials/certifications/github-foundations" },
-    { t: "AZ-204 Azure Developer Associate (Paid Exam / Free Learning Path)", u: "https://learn.microsoft.com/credentials/certifications/azure-developer/" }
+    { t: "AZ-204 Azure Developer Associate (Paid Exam / Free Learning Path)", u: "https://learn.microsoft.com/credentials/certifications/azure-developer/" },
+
+{ t: "Microsoft Applied Skills: Create a serverless logic app with Azure Logic Apps (Free Cert)", u: "https://learn.microsoft.com/credentials/applied-skills/create-a-serverless-logic-app-with-azure-logic-apps/" },
+{ t: "Microsoft Applied Skills: Implement security in Azure Storage (Free Cert)", u: "https://learn.microsoft.com/credentials/applied-skills/implement-security-in-azure-storage/" },
+{ t: "MongoDB University: MongoDB Node.js / C# Developer Path (100% Free Badges)", u: "https://learn.mongodb.com/" },
+{ t: "Postman API Fundamentals Student Expert (100% Free Badge)", u: "https://www.postman.com/company/student-program/" }
   ],
 
   milestones: [
