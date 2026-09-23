@@ -4,240 +4,281 @@ const ROADMAP = {
       n: "01", title: "C# Fundamentals",
       links: [
         { t: "Get Started with C#", u: "https://learn.microsoft.com/training/paths/get-started-c-sharp-part-1/" },
-        { t: "C# Fundamentals", u: "https://learn.microsoft.com/training/paths/csharp-first-steps/" },
+        { t: "C# Fundamentals for Beginners", u: "https://learn.microsoft.com/training/paths/csharp-first-steps/" },
         { t: "Add Logic to C# Applications", u: "https://learn.microsoft.com/training/paths/csharp-if-elseif-else/" },
-        { t: "Work with Variable Data", u: "https://learn.microsoft.com/training/paths/csharp-arrays-operations/" }
+        { t: "Work with Variable Data in C#", u: "https://learn.microsoft.com/training/paths/csharp-arrays-operations/" }
       ],
-      topics: []
+      topics: ["Variables & Data Types", "Control Flow (if/switch)", "Loops (for/foreach/while)", "Arrays & Collections", "Methods & Scope", "Value Types vs Reference Types", "Memory Management (Stack vs Heap)"]
     },
     {
-      n: "02", title: "Object-Oriented Programming",
+      n: "02", title: "Object-Oriented Programming (OOP)",
       links: [
-        { t: "Create Classes and Objects", u: "https://learn.microsoft.com/training/modules/create-classes-objects-c-sharp/" },
-        { t: "Implement Inheritance", u: "https://learn.microsoft.com/training/modules/inheritance-c-sharp/" },
-        { t: "Use Interfaces", u: "https://learn.microsoft.com/training/modules/develop-object-oriented-programming/" }
+        { t: "Create Classes and Objects in C#", u: "https://learn.microsoft.com/training/modules/create-classes-objects-c-sharp/" },
+        { t: "Implement Inheritance in C#", u: "https://learn.microsoft.com/training/modules/inheritance-c-sharp/" },
+        { t: "Use Interfaces in C#", u: "https://learn.microsoft.com/training/modules/develop-object-oriented-programming/" },
+        { t: "Records and Immutability in C#", u: "https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/record" }
       ],
-      topics: ["Classes", "Objects", "Properties", "Encapsulation", "Abstraction", "Inheritance", "Polymorphism", "Interfaces"]
+      topics: ["Classes", "Objects", "Properties & Fields", "Encapsulation", "Abstraction", "Inheritance", "Polymorphism", "Interfaces", "Records & Immutability"]
     },
     {
-      n: "03", title: "Intermediate C#",
+      n: "03", title: "Intermediate C# & Advanced Features",
       links: [
-        { t: "LINQ", u: "https://learn.microsoft.com/dotnet/csharp/linq/" },
-        { t: "Async Programming", u: "https://learn.microsoft.com/dotnet/csharp/asynchronous-programming/" },
-        { t: "Collections", u: "https://learn.microsoft.com/dotnet/csharp/programming-guide/concepts/collections" }
+        { t: "LINQ Query & Enumerable Operations", u: "https://learn.microsoft.com/dotnet/csharp/linq/" },
+        { t: "Asynchronous Programming with async/await", u: "https://learn.microsoft.com/dotnet/csharp/asynchronous-programming/" },
+        { t: "Collections & Generic Types", u: "https://learn.microsoft.com/dotnet/csharp/programming-guide/concepts/collections" },
+        { t: "Memory Performance: Span<T> and Memory<T>", u: "https://learn.microsoft.com/dotnet/standard/memory-and-spans/memory-t-usage-guidelines" }
       ],
-      topics: ["Exception Handling", "Generics", "Delegates", "Events", "LINQ", "Async/Await"],
-      extra: "Span<T> / Memory<T> basics, IAsyncEnumerable<T>, cancellation tokens"
+      topics: ["Exception Handling", "Generics", "Delegates & Lambda Expressions", "Events", "LINQ", "Async/Await", "IDisposable & using statements"],
+      extra: "Span<T> / Memory<T>, IAsyncEnumerable<T>, CancellationTokens, Pattern Matching"
     },
     {
-      n: "04", title: "Git & GitHub",
+      n: "04", title: "Git, GitHub & Version Control",
       links: [
         { t: "Microsoft Git Learning Path", u: "https://learn.microsoft.com/training/paths/intro-to-vc-git/" },
-        { t: "GitHub Fundamentals", u: "https://learn.microsoft.com/training/paths/github-foundations/" }
+        { t: "GitHub Foundations Path", u: "https://learn.microsoft.com/training/paths/github-foundations/" },
+        { t: "Automate Workflows with GitHub Actions", u: "https://learn.microsoft.com/training/paths/github-actions/" }
       ],
-      topics: ["Git", "Branching", "Pull Requests", "GitHub Actions"]
+      topics: ["Git Core Commands", "Branching Strategies", "Merge vs Rebase", "Pull Requests & Code Reviews", "GitHub Actions", "Semantic & Conventional Commits"]
     },
     {
-      n: "05", title: "SQL & Database Fundamentals",
+      n: "05", title: "HTML5 & Semantic Web Fundamentals", tagline: "New - Frontend",
       links: [
-        { t: "Introduction to SQL", u: "https://learn.microsoft.com/training/paths/get-started-querying-with-transact-sql/" },
-        { t: "Azure SQL Fundamentals", u: "https://learn.microsoft.com/training/modules/azure-sql-intro/" }
+        { t: "FreeCodeCamp Responsive Web Design Certification", u: "https://www.freecodecamp.org/learn/2022/responsive-web-design/" },
+        { t: "MDN Web Docs: HTML Developer Guide", u: "https://developer.mozilla.org/en-US/docs/Learn/HTML" },
+        { t: "W3C Web Accessibility (WCAG) Overview", u: "https://www.w3.org/WAI/fundamentals/accessibility-intro/" }
       ],
-      topics: ["SELECT", "JOIN", "GROUP BY", "Stored Procedures", "Indexes", "Database Design"],
-      extra: "transactions, isolation levels, connection pooling, N+1 query patterns"
+      topics: ["Semantic HTML5 Elements (<header>, <main>, <nav>, <article>, <footer>)", "HTML Forms, Validation & Input Types", "DOM Structure & Tree Navigation", "Web Accessibility (a11y) & ARIA Attributes", "SEO Best Practices & Meta Tags"],
+      why: "Provides foundational HTML understanding necessary before wiring up Razor Pages, MVC, or Blazor UIs."
     },
     {
-      n: "06", title: "Entity Framework Core",
+      n: "06", title: "CSS3, Flexbox, Grid & Modern Styling", tagline: "New - Frontend",
       links: [
-        { t: "EF Core Documentation", u: "https://learn.microsoft.com/ef/core/" },
-        { t: "Getting Started with EF Core", u: "https://learn.microsoft.com/ef/core/get-started/" }
+        { t: "MDN Web Docs: CSS Developer Guide", u: "https://developer.mozilla.org/en-US/docs/Learn/CSS" },
+        { t: "Flexbox Froggy (Interactive Practice)", u: "https://flexboxfroggy.com/" },
+        { t: "CSS Grid Garden (Interactive Practice)", u: "https://cssgridgarden.com/" },
+        { t: "Tailwind CSS Official Documentation", u: "https://tailwindcss.com/docs" }
       ],
-      topics: ["DbContext", "Migrations", "Relationships", "LINQ", "CRUD"],
-      extra: "query performance tuning (AsNoTracking, split queries), interceptors, raw SQL fallback, database-first vs code-first"
+      topics: ["CSS Box Model & Display Properties", "Flexbox Layout Architecture", "CSS Grid Layout Architecture", "Responsive Web Design & Media Queries", "CSS Custom Properties (Variables)", "Utility-First CSS (Tailwind CSS / Bootstrap)"],
+      why: "Delivers essential modern responsive layout and styling skills for web development."
     },
     {
-      n: "07", title: "ASP.NET Core Fundamentals",
+      n: "07", title: "SQL, Relational Databases & Dapper",
+      links: [
+        { t: "Introduction to Querying with Transact-SQL", u: "https://learn.microsoft.com/training/paths/get-started-querying-with-transact-sql/" },
+        { t: "Azure SQL Database Fundamentals", u: "https://learn.microsoft.com/training/modules/azure-sql-intro/" },
+        { t: "Dapper Micro-ORM Tutorial", u: "https://learn.microsoft.com/dotnet/architecture/microservices/net-core-net-framework-containers/net-framework-migration-guidance#micro-orms" }
+      ],
+      topics: ["SELECT & Filtering", "JOINs (Inner, Left, Right)", "GROUP BY & Aggregations", "Stored Procedures & Views", "Indexes & Query Plans", "Database Normalization", "Dapper Micro-ORM"],
+      extra: "Transactions, Isolation levels, Connection pooling, N+1 query antipattern"
+    },
+    {
+      n: "08", title: "Entity Framework Core (EF Core)",
+      links: [
+        { t: "EF Core Documentation & Overview", u: "https://learn.microsoft.com/ef/core/" },
+        { t: "Getting Started with EF Core", u: "https://learn.microsoft.com/ef/core/get-started/" },
+        { t: "EF Core Query Performance Tuning", u: "https://learn.microsoft.com/ef/core/performance/efficient-querying" },
+        { t: "EF Core Migrations in Production", u: "https://learn.microsoft.com/ef/core/managing-schemas/migrations/" }
+      ],
+      topics: ["DbContext", "Migrations & CLI", "Relationships (1:1, 1:N, N:M)", "LINQ-to-Entities", "CRUD Operations", "Value Objects & Owned Entities"],
+      extra: "AsNoTracking, Split Queries, Interceptors, Raw SQL Fallback, Code-First vs Database-First"
+    },
+    {
+      n: "09", title: "ASP.NET Core Fundamentals & MVC", tagline: "Updated",
       links: [
         { t: "Build Web Apps with ASP.NET Core", u: "https://learn.microsoft.com/training/paths/aspnet-core-web-app/" },
-        { t: "ASP.NET Core Documentation", u: "https://learn.microsoft.com/aspnet/core/" }
+        { t: "ASP.NET Core Architecture & Documentation", u: "https://learn.microsoft.com/aspnet/core/" },
+        { t: "Razor Pages Web App Development", u: "https://learn.microsoft.com/aspnet/core/razor-pages/" },
+        { t: "Dependency Injection in .NET", u: "https://learn.microsoft.com/dotnet/core/extensions/dependency-injection" }
       ],
-      topics: ["Middleware", "Routing", "Dependency Injection", "Configuration", "Logging"],
-      extra: "hosting model (Kestrel), options pattern, health checks, IHostedService / background services"
+      topics: ["Middleware Pipeline", "Routing & Endpoint Matching", "Razor Pages & MVC Views (HTML + C#)", "Dependency Injection", "Configuration (appsettings.json, User Secrets)", "Structured Logging"],
+      extra: "Kestrel web server, Options pattern, Health checks, IHostedService background workers"
     },
     {
-      n: "08", title: "Web API Development", tagline: "Expanded",
+      n: "10", title: "Web API Development & Minimal APIs",
       links: [
-        { t: "Build Web APIs", u: "https://learn.microsoft.com/aspnet/core/web-api/" },
-        { t: "Create RESTful APIs", u: "https://learn.microsoft.com/training/modules/build-web-api-aspnet-core/" },
-        { t: "Minimal APIs Overview", u: "https://learn.microsoft.com/aspnet/core/fundamentals/minimal-apis" }
+        { t: "Build RESTful APIs with ASP.NET Core", u: "https://learn.microsoft.com/aspnet/core/web-api/" },
+        { t: "Minimal APIs Quickstart", u: "https://learn.microsoft.com/aspnet/core/fundamentals/minimal-apis" },
+        { t: "OpenAPI Support in .NET", u: "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/overview" },
+        { t: "Real-time Communication with SignalR", u: "https://learn.microsoft.com/aspnet/core/signalr/introduction" }
       ],
-      topics: ["Controllers", "Minimal APIs", "HTTP Methods", "DTOs", "Validation (FluentValidation)", "Swagger/OpenAPI"],
-      extra: "API versioning, pagination/filtering/sorting patterns, response caching, rate limiting middleware, problem details / global exception handling, gRPC basics, SignalR for real-time endpoints"
+      topics: ["Controllers vs Minimal APIs", "HTTP Verbs & Status Codes", "DTOs & Mapping", "Request Validation (FluentValidation)", "OpenAPI / Swagger / Scalar", "Endpoint Filters"],
+      extra: "API Versioning, Pagination/Filtering/Sorting patterns, Response Caching, Rate Limiting, ProblemDetails global exception handling, gRPC, SignalR"
     },
     {
-      n: "8.5", title: "Blazor",
+      n: "11", title: "Blazor Full-Stack UI & Component Libraries", tagline: "Expanded",
       links: [
-        { t: "Blazor Overview", u: "https://learn.microsoft.com/aspnet/core/blazor/" },
-        { t: "Build a Blazor Web App", u: "https://learn.microsoft.com/training/modules/build-blazor-webassembly-application-with-visual-studio-code/" }
+        { t: "Blazor Architecture & Overview", u: "https://learn.microsoft.com/aspnet/core/blazor/" },
+        { t: "Build a Blazor Web Assembly App", u: "https://learn.microsoft.com/training/modules/build-blazor-webassembly-application-with-visual-studio-code/" },
+        { t: "Blazor Render Modes in .NET 8+", u: "https://learn.microsoft.com/aspnet/core/blazor/components/render-modes" },
+        { t: "MudBlazor Component Library Doc", u: "https://mudblazor.com/" }
       ],
-      topics: ["Blazor Server vs WebAssembly vs Web App (hybrid render modes)", "Components", "Data Binding", "EventCallbacks", "Cascading Parameters", "JS Interop"],
-      extra: "calling your ASP.NET Core Web API from a Blazor front end, Blazor Server + SignalR under the hood, auth state with ASP.NET Core Identity, hosting Blazor + API in the same project",
-      why: "Gives you a full-stack C# option (no separate JS front end needed) — useful for internal admin panels/dashboards on top of your APIs."
+      topics: ["Blazor Server vs WebAssembly vs Auto render modes", "Components & Parameters", "Data Binding & Form Validation", "EventCallbacks", "Cascading Parameters", "JS Interop", "State Management"],
+      extra: "TailwindCSS / MudBlazor integration, Auth state integration, Calling ASP.NET Web APIs"
     },
     {
-      n: "09", title: "Authentication & Authorization",
+      n: "12", title: "Authentication & Authorization",
       links: [
-        { t: "Secure ASP.NET Core APIs", u: "https://learn.microsoft.com/aspnet/core/security/" },
-        { t: "JWT Authentication", u: "https://learn.microsoft.com/aspnet/core/security/authentication/" }
+        { t: "Overview of ASP.NET Core Security", u: "https://learn.microsoft.com/aspnet/core/security/" },
+        { t: "Configure JWT Authentication", u: "https://learn.microsoft.com/aspnet/core/security/authentication/" },
+        { t: "Policy-Based Authorization in ASP.NET Core", u: "https://learn.microsoft.com/aspnet/core/security/authorization/policies" },
+        { t: "ASP.NET Core Identity Integration", u: "https://learn.microsoft.com/aspnet/core/security/authentication/identity" }
       ],
-      topics: ["JWT", "Identity", "Claims", "Roles", "OAuth"],
-      extra: "refresh token rotation, ASP.NET Core Identity + external providers, API key auth for service-to-service calls, policy-based authorization"
+      topics: ["JWT (JSON Web Tokens)", "ASP.NET Core Identity", "Claims & ClaimsPrincipal", "Role-Based Access Control (RBAC)", "Policy-Based Authorization", "OAuth2 & OpenID Connect"],
+      extra: "Refresh Token rotation, External OAuth providers (Google/GitHub), API Key auth"
     },
     {
-      n: "10", title: "Clean Architecture & Design Patterns",
+      n: "13", title: "Clean Architecture & Design Patterns",
       links: [
-        { t: ".NET Architecture Guides", u: "https://learn.microsoft.com/dotnet/architecture/" }
+        { t: ".NET Application Architecture Guides", u: "https://learn.microsoft.com/dotnet/architecture/" },
+        { t: "Common Web Application Architectures", u: "https://learn.microsoft.com/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures" },
+        { t: "CQRS Pattern in .NET", u: "https://learn.microsoft.com/azure/architecture/patterns/cqrs" }
       ],
-      topics: ["Repository Pattern", "Unit of Work", "CQRS", "Clean Architecture", "SOLID Principles"],
-      extra: "MediatR pipeline behaviors, Result pattern for error handling, domain events, feature-folder structure"
+      topics: ["Repository & Unit of Work Patterns", "CQRS (Command Query Responsibility Segregation)", "Clean / Onion Architecture", "SOLID Principles", "Factory, Strategy, and Decorator Patterns"],
+      extra: "MediatR pipeline behaviors, Result pattern, Domain Events, Feature-folder structure"
     },
     {
-      n: "11", title: "Testing",
+      n: "14", title: "Unit Testing & Integration Testing",
       links: [
-        { t: "Unit Testing in .NET", u: "https://learn.microsoft.com/dotnet/core/testing/" }
+        { t: "Unit Testing C# Code in .NET", u: "https://learn.microsoft.com/dotnet/core/testing/" },
+        { t: "Integration Testing ASP.NET Core APIs", u: "https://learn.microsoft.com/aspnet/core/test/integration-tests" },
+        { t: "Testcontainers for .NET Integration Tests", u: "https://testcontainers.com/modules/mssql/" }
       ],
-      topics: ["xUnit", "Mocking (Moq/NSubstitute)", "Integration Testing"],
-      extra: "WebApplicationFactory for API integration tests, Testcontainers for real DB tests, contract testing basics"
+      topics: ["Unit Testing (xUnit / NUnit)", "Mocking Frameworks (Moq / NSubstitute)", "FluentAssertions", "Integration Testing", "Test-Driven Development (TDD)"],
+      extra: "WebApplicationFactory for API tests, Testcontainers for real containerized DB tests"
     },
     {
-      n: "12", title: "Docker",
+      n: "15", title: "Docker & Cloud-Native .NET Aspire",
       links: [
-        { t: "Docker for .NET", u: "https://learn.microsoft.com/dotnet/core/docker/" }
+        { t: "Containerize a .NET Application", u: "https://learn.microsoft.com/dotnet/core/docker/" },
+        { t: "Get Started with .NET Aspire", u: "https://learn.microsoft.com/dotnet/aspire/get-started/aspire-overview" },
+        { t: ".NET Aspire Service Discovery & Orchestration", u: "https://learn.microsoft.com/dotnet/aspire/service-discovery/overview" }
       ],
-      topics: ["Containers", "Dockerfiles", "Docker Compose"],
-      extra: "multi-stage builds for smaller images, containerized DB + API compose setup, .NET Aspire for orchestration"
+      topics: ["Docker Concepts & Containers", "Dockerfile creation for .NET", "Docker Compose multi-container setups", "Environment Variable Config"],
+      extra: "Multi-stage builds, Containerized DB + API setups, .NET Aspire dashboard"
     },
     {
-      n: "13", title: "Azure Cloud",
+      n: "16", title: "Azure Cloud Services",
       links: [
-        { t: "AZ-900 Learning Path", u: "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/" },
-        { t: "Azure Developer Certification", u: "https://learn.microsoft.com/credentials/certifications/azure-developer/" }
+        { t: "AZ-900 Azure Fundamentals Path", u: "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/" },
+        { t: "Azure Developer Certification (AZ-204) Path", u: "https://learn.microsoft.com/credentials/certifications/azure-developer/" },
+        { t: "Azure App Service Documentation", u: "https://learn.microsoft.com/azure/app-service/" },
+        { t: "Azure Key Vault Integration with .NET", u: "https://learn.microsoft.com/azure/key-vault/general/overview" }
       ],
-      topics: ["Azure App Service", "Azure SQL", "Storage Accounts", "Functions", "Key Vault"],
-      extra: "Azure Container Apps, App Configuration, managed identities, Application Insights for API monitoring"
+      topics: ["Azure App Service", "Azure SQL Database", "Azure Blob Storage", "Azure Functions (Serverless)", "Azure Key Vault"],
+      extra: "Azure Container Apps, App Configuration, Managed Identities"
     },
     {
-      n: "14", title: "CI/CD",
+      n: "17", title: "CI/CD Deployment Pipelines",
       links: [
-        { t: "GitHub Actions", u: "https://learn.microsoft.com/training/paths/github-actions/" },
-        { t: "Azure DevOps", u: "https://learn.microsoft.com/azure/devops/" }
+        { t: "Build and Deploy .NET with GitHub Actions", u: "https://learn.microsoft.com/azure/developer/github/github-actions" },
+        { t: "Azure Pipelines for ASP.NET Core", u: "https://learn.microsoft.com/azure/devops/pipelines/ecosystems/dotnet-core" }
       ],
-      topics: ["Build Pipelines", "Deployment Pipelines", "Automated Testing"],
-      extra: "automated EF Core migrations in pipeline, environment-based config/secrets, blue-green or slot deployments"
+      topics: ["Build Pipelines", "Deployment Pipelines", "Automated Testing in CI", "Artifact & Container Registry Management"],
+      extra: "Automated EF Core migrations in deployment, Secret management in pipelines"
     },
     {
-      n: "15", title: "Backend Scalability & Reliability", tagline: "New",
+      n: "18", title: "Backend Scalability & Resilience",
       links: [
-        { t: "Distributed Caching in ASP.NET Core", u: "https://learn.microsoft.com/en-us/aspnet/core/performance/caching/distributed" },
-        { t: "Implement Application Resiliency (Polly)", u: "https://learn.microsoft.com/en-in/training/modules/microservices-resiliency-aspnet-core/3-implement-application-resiliency" },
-        { t: ".NET Observability with OpenTelemetry", u: "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/observability-with-otel" }
+        { t: "Distributed Caching & HybridCache in .NET", u: "https://learn.microsoft.com/aspnet/core/performance/caching/distributed" },
+        { t: "Implement Resiliency with Polly in .NET", u: "https://learn.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/" },
+        { t: ".NET Observability with OpenTelemetry", u: "https://learn.microsoft.com/dotnet/core/diagnostics/observability-with-otel" },
+        { t: "Background Tasks with Quartz.NET / Hangfire", u: "https://learn.microsoft.com/aspnet/core/fundamentals/host/hosted-services" }
       ],
-      topics: ["caching strategies (in-memory, distributed/Redis)", "message queues (RabbitMQ/Azure Service Bus)", "background job processing (Hangfire/Quartz.NET)", "retry/circuit breaker patterns (Polly)", "structured logging (Serilog)", "distributed tracing/OpenTelemetry"],
-      why: "Rounds out the \"junior → mid-level backend\" gap around real-world production concerns."
+      topics: ["Caching Strategies (In-Memory, Redis, HybridCache)", "Background Processing (Hangfire / Quartz.NET)", "Polly Resilience Patterns (Retry, Circuit Breaker)", "OpenTelemetry Distributed Tracing"],
+      why: "Provides skills to build robust, scalable API platforms."
     },
     {
-      n: "16", title: "Multi-Tenancy Patterns", tagline: "New",
+      n: "19", title: "Multi-Tenancy SaaS Patterns",
       links: [
-        { t: "Multitenant SaaS Patterns (Azure SQL Database)", u: "https://learn.microsoft.com/en-us/azure/azure-sql/database/saas-tenancy-app-design-patterns?view=azuresql" },
-        { t: "SaaS and Multitenant Solution Architecture", u: "https://learn.microsoft.com/en-us/azure/architecture/guide/saas-multitenant-solution-architecture/" },
-        { t: "Architect Multitenant Solutions on Azure", u: "https://learn.microsoft.com/en-us/azure/architecture/guide/multitenant/overview" }
+        { t: "SaaS Tenancy Architecture Patterns", u: "https://learn.microsoft.com/azure/azure-sql/database/saas-tenancy-app-design-patterns" },
+        { t: "Architecting Multitenant Solutions on Azure", u: "https://learn.microsoft.com/azure/architecture/guide/multitenant/overview" }
       ],
-      topics: ["tenancy models (single-DB shared-schema, schema-per-tenant, DB-per-tenant)", "sharding", "tenant identity", "the Noisy Neighbor antipattern"],
-      why: "Directly relevant to SaaS-style projects — picking the wrong tenancy model early is expensive to walk back."
+      topics: ["Tenancy Models (Shared Schema, Schema-per-Tenant, DB-per-Tenant)", "Database Sharding", "Tenant Context Resolution", "Noisy Neighbor Antipattern"],
+      why: "Essential for building production-ready SaaS applications."
     },
     {
-      n: "17", title: "Domain-Driven Design & Microservices Patterns", tagline: "New",
+      n: "20", title: "Domain-Driven Design (DDD) & Tactical Patterns",
       links: [
-        { t: "Designing a Microservice Domain Model", u: "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model" },
-        { t: "Domain Events: Design and Implementation", u: "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation" },
-        { t: "Use Domain Analysis to Model Microservices", u: "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/domain-analysis" },
-        { t: "Use Tactical DDD to Design Microservices", u: "https://learn.microsoft.com/en-us/azure/architecture/microservices/model/tactical-domain-driven-design" }
+        { t: "Designing Microservice Domain Models", u: "https://learn.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/microservice-domain-model" },
+        { t: "Domain Events Implementation", u: "https://learn.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation" },
+        { t: "Tactical DDD Design in .NET", u: "https://learn.microsoft.com/azure/architecture/microservices/model/tactical-domain-driven-design" }
       ],
-      topics: ["aggregates", "entities vs value objects", "bounded contexts", "ubiquitous language", "domain events vs integration events"],
-      why: "Goes deeper than Phase 10's Clean Architecture — this is where CQRS and Result-pattern choices actually get justified."
+      topics: ["Aggregates & Root Entities", "Entities vs Value Objects", "Bounded Contexts", "Ubiquitous Language", "Domain Events vs Integration Events"],
+      extra: "Transactional Outbox Pattern, MassTransit Integration, Saga Pattern"
     },
     {
-      n: "18", title: "Event-Driven Architecture & Messaging", tagline: "New",
+      n: "21", title: "Event-Driven Architecture & Messaging (MassTransit)",
       links: [
-        { t: "Asynchronous Message-Based Communication", u: "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/architect-microservice-container-applications/asynchronous-message-based-communication" },
-        { t: "Implementing Event-Based Communication Between Microservices", u: "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/integration-event-based-microservice-communications" },
-        { t: "Event-Driven Architecture Style", u: "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven" }
+        { t: "Asynchronous Messaging Architecture", u: "https://learn.microsoft.com/dotnet/architecture/microservices/architect-microservice-container-applications/asynchronous-message-based-communication" },
+        { t: "Integration Event Communications", u: "https://learn.microsoft.com/dotnet/architecture/microservices/multi-container-microservice-net-applications/integration-event-based-microservice-communications" },
+        { t: "MassTransit Quickstart Guide", u: "https://masstransit.io/quick-starts/rabbitmq" }
       ],
-      topics: ["pub/sub vs point-to-point queues", "event bus abstractions", "eventual consistency", "choreography vs saga orchestration"],
-      why: "Turns Phase 15's \"message queues\" bullet into an actual pattern instead of a name-drop."
+      topics: ["Pub/Sub vs Queues", "Message Bus Abstractions (MassTransit)", "RabbitMQ & Azure Service Bus", "Eventual Consistency", "Choreography vs Saga Orchestration"],
+      why: "Turns message queues into scalable architectural patterns."
     },
     {
-      n: "19", title: "API Gateway & Reverse Proxy (YARP)", tagline: "New",
+      n: "22", title: "API Gateway & Reverse Proxy (YARP)",
       links: [
-        { t: "Overview of YARP", u: "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/yarp-overview?view=aspnetcore-10.0" },
-        { t: "Get Started with YARP", u: "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/getting-started?view=aspnetcore-10.0" },
-        { t: "YARP Configuration Files", u: "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/config-files?view=aspnetcore-10.0" },
-        { t: "YARP Authentication and Authorization", u: "https://learn.microsoft.com/en-us/aspnet/core/fundamentals/servers/yarp/authn-authz?view=aspnetcore-10.0" }
+        { t: "YARP: Yet Another Reverse Proxy Overview", u: "https://learn.microsoft.com/aspnet/core/fundamentals/servers/yarp/yarp-overview" },
+        { t: "Getting Started with YARP", u: "https://learn.microsoft.com/aspnet/core/fundamentals/servers/yarp/getting-started" },
+        { t: "Authentication & Authorization in YARP", u: "https://learn.microsoft.com/aspnet/core/fundamentals/servers/yarp/authn-authz" }
       ],
-      topics: ["routing", "load balancing", "TLS termination", "per-route authorization policies"],
-      why: "A first-party .NET reverse proxy — useful the moment you split a monolith into more than one backend service."
+      topics: ["Request Routing", "Load Balancing", "TLS Termination", "Gateway Rate Limiting", "Per-route Authorization Policies"],
+      why: "Microsoft reverse proxy for monolith-to-microservice migration."
     },
     {
-      n: "20", title: "Security Hardening", tagline: "New",
+      n: "23", title: "Security Hardening & OWASP",
       links: [
-        { t: "Guide to Secure .NET Development with OWASP Top 10", u: "https://learn.microsoft.com/en-us/training/modules/owasp-top-10-for-dotnet-developers/" },
-        { t: "ASP.NET Core Security Topics (overview)", u: "https://learn.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-7.0" },
-        { t: "Safe Storage of App Secrets in Development", u: "https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-10.0" }
+        { t: "OWASP Top 10 for .NET Developers", u: "https://learn.microsoft.com/training/modules/owasp-top-10-for-dotnet-developers/" },
+        { t: "ASP.NET Core Security Best Practices", u: "https://learn.microsoft.com/aspnet/core/security/" },
+        { t: "Safe Storage of App Secrets", u: "https://learn.microsoft.com/aspnet/core/security/app-secrets" }
       ],
-      topics: ["OWASP Top 10 for .NET", "input validation", "Secret Manager vs Key Vault", "HTTPS/HSTS", "CSRF/XSS mitigation in Razor/Blazor"],
-      why: "Closes the gap between \"auth works\" (Phase 9) and \"auth is actually hardened\"."
+      topics: ["OWASP Top 10 Mitigation", "Input Sanitization & Validation", "Secret Manager vs Azure Key Vault", "HTTPS & HSTS Enforcement", "CSRF & XSS Protection"],
+      why: "Ensures production-level security implementation."
     },
     {
-      n: "21", title: "Performance Profiling & Diagnostics", tagline: "New",
+      n: "24", title: "Performance Profiling & Diagnostics",
       links: [
-        { t: ".NET Diagnostic Tools Overview", u: "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/tools-overview" },
-        { t: "Profiling Tools in .NET", u: "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/profilers" },
-        { t: "dotnet-counters Diagnostic Tool", u: "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/dotnet-counters" },
-        { t: "Debug High CPU Usage in .NET Core", u: "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/debug-highcpu" }
+        { t: ".NET Diagnostic Tools Overview", u: "https://learn.microsoft.com/dotnet/core/diagnostics/tools-overview" },
+        { t: "Diagnose High CPU with dotnet-counters", u: "https://learn.microsoft.com/dotnet/core/diagnostics/dotnet-counters" },
+        { t: "Memory Dump Analysis with dotnet-dump", u: "https://learn.microsoft.com/dotnet/core/diagnostics/debug-highcpu" }
       ],
-      topics: ["dotnet-trace", "dotnet-counters", "dotnet-dump", "dotnet-gcdump", "flamegraphs", "root-causing slow endpoints"],
-      why: "The practical skill behind \"why is this API slow\" once caching/resilience (Phase 15) alone doesn't explain it."
+      topics: ["dotnet-trace", "dotnet-counters", "dotnet-dump", "dotnet-gcdump", "Memory Leak & Allocation Profiling", "Flamegraphs"],
+      why: "Hands-on diagnostic skills for resolving production performance issues."
     },
     {
-      n: "22", title: "NoSQL with .NET (MongoDB)", tagline: "New",
+      n: "25", title: "NoSQL Data Access with MongoDB",
       links: [
-        { t: "Create a Web API with ASP.NET Core and MongoDB", u: "https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app?view=aspnetcore-10.0" }
+        { t: "Create a Web API with ASP.NET Core and MongoDB", u: "https://learn.microsoft.com/aspnet/core/tutorials/first-mongo-app" }
       ],
-      topics: ["MongoDB.Driver", "BsonId/BSON serialization attributes", "collections vs tables mindset", "when NoSQL beats EF Core/SQL for a given service"],
-      why: "You already run MongoDB elsewhere (Wattly, SHIELA, Nini HR) — this closes the gap between \"I use Mongo in Node\" and \"I use Mongo in .NET\"."
+      topics: ["MongoDB.Driver for .NET", "BsonId & Serialization", "Document Store vs Relational Mindset", "Repository Pattern with Mongo", "When to choose NoSQL vs EF Core"],
+      why: "Expands document persistence options alongside relational databases."
     }
   ],
 
   projects: [
-    { tier: "Beginner", items: ["Calculator", "Student Management System", "Library Management System"] },
-    { tier: "Intermediate", items: ["Inventory System", "Expense Tracker", "Employee Management API"] },
-    { tier: "Advanced", items: ["E-Commerce API", "Task Management API", "Learning Management System (LMS)", "Hotel Reservation API", "Banking API"] },
-    { tier: "Backend-heavy add-ons", items: ["Notification service (queue-driven, background worker)", "Rate-limited public API with API key auth", "Multi-tenant SaaS-style API (tie into your existing capstone work)"] }
+    { tier: "Beginner Frontend & C#", items: ["Responsive Personal Portfolio Site (HTML5/CSS3)", "Calculator CLI & Web App", "Student Management System"] },
+    { tier: "Intermediate Full-Stack", items: ["Inventory Management System (Blazor + EF Core)", "Expense Tracker API & Responsive Dashboard", "Employee Management API with Auth"] },
+    { tier: "Advanced Architecture", items: ["E-Commerce Web App (Blazor WebAssembly + Minimal APIs + CQRS)", "Task Management App with SignalR Real-Time Updates", "Hotel Reservation System (Clean Architecture + Tailwind)"] },
+    { tier: "Backend-heavy add-ons", items: ["Queue-Driven Notification Service (MassTransit + Worker)", "Rate-limited Public API with API Key Auth", "Multi-Tenant SaaS Platform Backend"] }
   ],
 
   certs: [
-    { t: "AZ-900 Azure Fundamentals", u: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/" },
-    { t: "GitHub Foundations", u: "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations" },
-    { t: "Applied Skills: Get started with classes, properties, and methods in C#", u: "https://learn.microsoft.com/en-us/credentials/applied-skills/get-started-with-classes-properties-and-methods-in-c-sharp/" },
-    { t: "AZ-204 Azure Developer Associate", u: "https://learn.microsoft.com/en-us/credentials/certifications/azure-developer/" },
-    { t: "Applied Skills: Develop an ASP.NET Core web app that consumes an API", u: "https://learn.microsoft.com/en-us/credentials/applied-skills/develop-an-aspnet-core-web-app-that-consumes-an-api/" },
-    { t: "Build APIs with ASP.NET Core", u: "https://learn.microsoft.com/en-us/training/modules/build-web-api-aspnet-core/", note: "no standalone Applied Skills credential found under this exact name — closest match is this training module (not a certification exam)" }
+    { t: "FreeCodeCamp: Responsive Web Design Certification (100% Free Cert)", u: "https://www.freecodecamp.org/learn/2022/responsive-web-design/" },
+    { t: "FreeCodeCamp: C# Certification with Microsoft (100% Free Cert)", u: "https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/" },
+    { t: "Microsoft Applied Skills: Get started with classes, properties, and methods in C# (Free Cert)", u: "https://learn.microsoft.com/credentials/applied-skills/get-started-with-classes-properties-and-methods-in-c-sharp/" },
+    { t: "Microsoft Applied Skills: Develop an ASP.NET Core web app that consumes an API (Free Cert)", u: "https://learn.microsoft.com/credentials/applied-skills/develop-an-aspnet-core-web-app-that-consumes-an-api/" },
+    { t: "Microsoft Applied Skills: Deploy containerized apps to Azure Container Apps (Free Cert)", u: "https://learn.microsoft.com/credentials/applied-skills/deploy-apps-to-azure-container-apps/" },
+    { t: "Cisco Networking Academy: Cybersecurity Essentials (100% Free Cert)", u: "https://www.netacad.com/courses/cybersecurity/cybersecurity-essentials" },
+    { t: "AZ-900 Azure Fundamentals (Paid Exam / Free Learning Path)", u: "https://learn.microsoft.com/credentials/certifications/azure-fundamentals/" },
+    { t: "GitHub Foundations (Paid Exam / Free Learning Path)", u: "https://learn.microsoft.com/credentials/certifications/github-foundations" },
+    { t: "AZ-204 Azure Developer Associate (Paid Exam / Free Learning Path)", u: "https://learn.microsoft.com/credentials/certifications/azure-developer/" }
   ],
 
   milestones: [
-    { range: "Through Phase 10", result: "Junior .NET Backend Developer skill level" },
-    { range: "Through Phase 14 + AZ-204 + 3 strong portfolio projects", result: "Approaching Mid-level Backend Developer" },
-    { range: "Through Phase 15 + a scalability-focused project", result: "Mid-level, production-ready backend skill set" },
-    { range: "Through Phase 22 + a multi-tenant or event-driven project", result: "Senior-leaning backend skill set (architecture, security, diagnostics)" }
+    { range: "Through Phase 06", result: "Frontend Basics & Responsive Layout Specialist" },
+    { range: "Through Phase 12", result: "Junior Full-Stack .NET Developer" },
+    { range: "Through Phase 17 + Free Certifications", result: "Mid-level Full-Stack Developer with Cloud Deployment skills" },
+    { range: "Through Phase 25 + Advanced Portfolio", result: "Senior-leaning Full-Stack .NET Architect (Distributed systems, Cloud, Microservices)" }
   ]
 };
